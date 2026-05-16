@@ -1,0 +1,6 @@
+Host sz920B-1
+  HostName 192.168.25.53
+  User root
+Host kadc
+  HostName 193.11.8.2
+  User root
