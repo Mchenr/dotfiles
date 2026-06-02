@@ -1,6 +1,30 @@
 Host sz920B-1
   HostName 192.168.25.53
-  User root
-Host kadc
-  HostName 193.11.8.2
-  User root
+  User c00913906
+  RemoteForward 11082 127.0.0.1:1082
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
+Host sz920F-1
+  HostName 192.168.25.146
+  User c00913906
+  RemoteForward 11082 127.0.0.1:1082
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
+Host sz920F-2
+  HostName 192.168.25.147
+  User c00913906
+  RemoteForward 11082 127.0.0.1:1082
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
+Host sz920-1
+  HostName 192.168.25.135
+  User c00913906
+  RemoteForward 11082 127.0.0.1:1082
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
+Host sz920-2
+  HostName 192.168.25.136
+  User c00913906
+  RemoteForward 11082 127.0.0.1:1082
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
