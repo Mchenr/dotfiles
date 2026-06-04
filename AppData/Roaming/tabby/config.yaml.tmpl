@@ -1,3 +1,4 @@
+{{- if eq .chezmoi.os "windows" }}
 version: 8
 profiles: []
 groups: []
@@ -234,3 +235,4 @@ profileDefaults:
   ssh:
     disableDynamicTitle: true
 profileBlacklist: []
+{{- end }}
