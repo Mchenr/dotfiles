@@ -1,12 +1,32 @@
+{{ if eq .chezmoi.os "linux" -}}
 Host github.com
   HostName ssh.github.com
   User git
   Port 443
   ServerAliveInterval 60
   ServerAliveCountMax 3
+{{ end -}}
 
 Host sz920B-1
   HostName 192.168.25.53
+  User c00913906
+  RemoteForward 11082 127.0.0.1:1082
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
+Host sz920B-2
+  HostName 192.168.25.128
+  User c00913906
+  RemoteForward 11082 127.0.0.1:1082
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
+Host sz920B-3
+  HostName 192.168.25.85
+  User c00913906
+  RemoteForward 11082 127.0.0.1:1082
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
+Host sz920B-4
+  HostName 192.168.25.84
   User c00913906
   RemoteForward 11082 127.0.0.1:1082
   ServerAliveInterval 60
@@ -35,3 +55,10 @@ Host sz920-2
   RemoteForward 11082 127.0.0.1:1082
   ServerAliveInterval 60
   ServerAliveCountMax 3
+Host sz950-1
+  HostName 192.168.25.87
+  User c00913906
+  RemoteForward 11082 127.0.0.1:1082
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
+
