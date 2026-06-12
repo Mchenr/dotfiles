@@ -1,2 +1,5 @@
 AGENTS.md
 AGENTS
+{{- if ne .chezmoi.os "linux" }}
+run_onchange_linux_docker_daemon_config.sh.tmpl
+{{- end }}
