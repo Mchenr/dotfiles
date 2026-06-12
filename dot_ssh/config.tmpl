@@ -10,55 +10,108 @@ Host github.com
 Host sz920B-1
   HostName 192.168.25.53
   User c00913906
-  RemoteForward 11082 127.0.0.1:1082
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
+Host sz920B-1-proxy
+  HostName 192.168.25.53
+  User c00913906
+  RemoteForward 127.0.0.1:11082 127.0.0.1:1082
+  ExitOnForwardFailure yes
   ServerAliveInterval 60
   ServerAliveCountMax 3
 Host sz920B-2
   HostName 192.168.25.128
   User c00913906
-  RemoteForward 11082 127.0.0.1:1082
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
+Host sz920B-2-proxy
+  HostName 192.168.25.128
+  User c00913906
+  RemoteForward 127.0.0.1:11082 127.0.0.1:1082
+  ExitOnForwardFailure yes
   ServerAliveInterval 60
   ServerAliveCountMax 3
 Host sz920B-3
   HostName 192.168.25.85
   User c00913906
-  RemoteForward 11082 127.0.0.1:1082
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
+Host sz920B-3-proxy
+  HostName 192.168.25.85
+  User c00913906
+  RemoteForward 127.0.0.1:11082 127.0.0.1:1082
+  ExitOnForwardFailure yes
   ServerAliveInterval 60
   ServerAliveCountMax 3
 Host sz920B-4
   HostName 192.168.25.84
   User c00913906
-  RemoteForward 11082 127.0.0.1:1082
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
+Host sz920B-4-proxy
+  HostName 192.168.25.84
+  User c00913906
+  RemoteForward 127.0.0.1:11082 127.0.0.1:1082
+  ExitOnForwardFailure yes
   ServerAliveInterval 60
   ServerAliveCountMax 3
 Host sz920F-1
   HostName 192.168.25.146
   User c00913906
-  RemoteForward 11082 127.0.0.1:1082
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
+Host sz920F-1-proxy
+  HostName 192.168.25.146
+  User c00913906
+  RemoteForward 127.0.0.1:11082 127.0.0.1:1082
+  ExitOnForwardFailure yes
   ServerAliveInterval 60
   ServerAliveCountMax 3
 Host sz920F-2
   HostName 192.168.25.147
   User c00913906
-  RemoteForward 11082 127.0.0.1:1082
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
+Host sz920F-2-proxy
+  HostName 192.168.25.147
+  User c00913906
+  RemoteForward 127.0.0.1:11082 127.0.0.1:1082
+  ExitOnForwardFailure yes
   ServerAliveInterval 60
   ServerAliveCountMax 3
 Host sz920-1
   HostName 192.168.25.135
   User c00913906
-  RemoteForward 11082 127.0.0.1:1082
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
+Host sz920-1-proxy
+  HostName 192.168.25.135
+  User c00913906
+  RemoteForward 127.0.0.1:11082 127.0.0.1:1082
+  ExitOnForwardFailure yes
   ServerAliveInterval 60
   ServerAliveCountMax 3
 Host sz920-2
   HostName 192.168.25.136
   User c00913906
-  RemoteForward 11082 127.0.0.1:1082
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
+Host sz920-2-proxy
+  HostName 192.168.25.136
+  User c00913906
+  RemoteForward 127.0.0.1:11082 127.0.0.1:1082
+  ExitOnForwardFailure yes
   ServerAliveInterval 60
   ServerAliveCountMax 3
 Host sz950-1
   HostName 192.168.25.87
   User c00913906
-  RemoteForward 11082 127.0.0.1:1082
   ServerAliveInterval 60
   ServerAliveCountMax 3
-
+Host sz950-1-proxy
+  HostName 192.168.25.87
+  User c00913906
+  RemoteForward 127.0.0.1:11082 127.0.0.1:1082
+  ExitOnForwardFailure yes
+  ServerAliveInterval 60
+  ServerAliveCountMax 3
