@@ -1,11 +1,9 @@
-{{ if eq .chezmoi.os "linux" -}}
 Host github.com
   HostName ssh.github.com
   User git
   Port 443
   ServerAliveInterval 60
   ServerAliveCountMax 3
-{{ end -}}
 
 Host sz920B-1
   HostName 192.168.25.53
